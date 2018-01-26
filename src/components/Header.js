@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Nav, Navbar, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const Header = () => {
