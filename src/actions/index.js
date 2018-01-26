@@ -5,11 +5,3 @@ export const selectUser = (user) => {
         payload: user
     }
 };
-
-export const selectTest = () => {
-    console.log("Test Kena Klik");
-    return {
-        type: 'USER_TEST',
-        payload: {nama:"faisalyeah"}
-    }
-};

@@ -18,7 +18,8 @@ export default function (state = {user}, action) {
     console.log(action);
     switch (action.type) {
         case 'USER_SELECTED':
-            return action.payload;         
+            return action.payload;
+            break;
     }
     return state;
 }
