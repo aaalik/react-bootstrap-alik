@@ -4,13 +4,23 @@
  * */
 
 // "state = null" is set so that we don't throw an error when app first boots up
-export default function (state = null, action) {
-    console.log(action);
+
+const user = {
+    id: null,
+    first: "",
+    last: "",
+    npm: null,
+    kelas: "",
+    jurusan: "",
+    thumbnail: ""
+}
+export default function (state = {user}, action) {
+    console.log(action.payload);
     switch (action.type) {
         case 'USER_SELECTED':
-            return action.payload;         
+            return action.payload;
         case 'USER_TEST':
-            return action.payload;            
+            return action.payload;
     }
     return state;
 }
